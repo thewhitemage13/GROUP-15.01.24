@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 Date::Date() : Date(23, 12, 2023) {}
 
 Date::Date(unsigned short day, unsigned short month, long long year)
