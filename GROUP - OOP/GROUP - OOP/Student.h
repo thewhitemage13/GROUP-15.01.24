@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 using namespace std;
-
 ///<summary>
 ///The Student class allows you to create objects of Student type
 ///<summary>
@@ -19,7 +18,6 @@ class Student {
     int* grade_of_practic = new int[countpractic];
     int* grade_of_homework = new int[counthomework];
     int* grade_of_exam = new int[countexam];
-
 public:
     /// <summary>
     ///  copy constructor for the Student class
@@ -69,7 +67,6 @@ public:
     /// Function for outputting grades for practice from an object of Student type
     /// </summary>
     void PrintPractic() const;
-
     void AverageGrade();
     /// <summary>
     /// Getter to return an index practice grade
