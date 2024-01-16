@@ -89,15 +89,19 @@ public:
         }
         int minGradeIndex = 0; // индекс студента с самым низким баллом
         // находим индекс студента с самым низким баллом
-        for (int i = 1; i < countstudent; i++) {
-            if (classmates[i]->GetAverageGrade() < classmates[minGradeIndex]->GetAverageGrade()) {
+        for (int i = 1; i < countstudent; i++) 
+        {
+            if (classmates[i]->GetAverageGrade() < classmates[minGradeIndex]->GetAverageGrade()) 
+            {
                 minGradeIndex = i;
             }
         }
         // удаляем студента с самым низким баллом
         Student** temp = new Student * [countstudent - 1];
-        for (int i = 0, j = 0; i < countstudent; i++) {
-            if (i != minGradeIndex) {
+        for (int i = 0, j = 0; i < countstudent; i++) 
+        {
+            if (i != minGradeIndex) 
+            {
                 temp[j++] = classmates[i];
             }
         }
@@ -158,8 +162,6 @@ unsigned int Student::count;
 
 int main()
 {
-    setlocale(0, "");
-
     Student a;
     a.AddExam(11);
     a.AddExam(12);
