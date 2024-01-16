@@ -143,9 +143,6 @@ void Student::AddExam(int newcountry)
     grade_of_exam = temp;
 }
 
-
-
-
 void  Student::AverageGrade()
 {
 
